@@ -1,0 +1,10 @@
+<div class="container">
+  <h1><%= @cocktail.name %></h1>
+
+
+  <%= link_to 'back', cocktails_path %>
+  <%= link_to '> Edit', edit_cocktail_path(@cocktail) %>
+  <%= link_to '- delete', cocktail_path(@cocktail),
+    method: :delete,
+    data: { confirm: 'Are you sure?' } %>
+</div>
